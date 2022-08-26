@@ -1,10 +1,17 @@
+body
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
 .container 
 {
-    display: flexbox;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background: aliceblue;
+    background: grey;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at right,  #2b2929 0%,#957979 47%,#9e9595 47%,#d9e1da 47%,#babebb 48%);
 }
 
 .container img 
@@ -13,25 +20,60 @@
     height: 300px;
 }
 
+
 nav 
 {
+    position: fixed;
+    top: 0;
     display: flex;
-    background: white;
-    justify-content: right;
+    background: grey;
     align-items: center;
-    float: right;
+    justify-content: space-between;
     width: 100%;
-    height: 30px;
+    height: 40px;
+    transition: 0.5s;
+    overflow: hidden;
 }
 
 nav a
 {
-    margin: 25px;
+    position: relative;
     padding: 5px;
     text-decoration: none;
     color: black;
     background: grey;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 3px;
+    font-weight: 400px;
+    transition: 0.5px;
 }
+
+nav a:hover
+{
+    color: white;
+}
+
+.container h2
+{
+    position: relative;
+    font-weight: 500px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgb(223, 216, 216);
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.content
+{
+    padding: 16px;
+}
+
+.sticky
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+  }
