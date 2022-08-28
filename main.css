@@ -39,9 +39,10 @@ nav a
 {
     position: relative;
     padding: 5px;
+    letter-spacing: 1px;
     text-decoration: none;
-    color: black;
-    background: grey;
+    text-transform: uppercase;
+    color: rgb(57, 55, 55);
     font-weight: 400px;
     transition: 0.5px;
 }
@@ -57,14 +58,17 @@ nav a:hover
     font-weight: 500px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: rgb(223, 216, 216);
+    color: rgb(58, 56, 56);
     transition: 0.5s;
     margin-left: 10px;
 }
 
-.content
+#about
 {
-    padding: 16px;
+    border: solid black 15px;
+    width: 500px;
+    margin: 20px;
+    text-align: center;
 }
 
 .sticky
@@ -77,3 +81,31 @@ nav a:hover
 .sticky + .content {
     padding-top: 60px;
   }
+
+.projects h3
+{
+    font-weight: 500px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgb(49, 47, 47);
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+table
+{
+    border-collapse: collapse;
+    width: 300px;
+}
+
+th:hover:nth-child(odd) 
+{
+    background-image: url(img/Rainbow-Lottery.JPG);
+    height: auto;
+    width: auto;
+}
+
+th:hover:nth-child(even)
+{
+    background-color: #2b2929;
+}
