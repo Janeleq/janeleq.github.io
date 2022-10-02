@@ -32,7 +32,7 @@
     <body>
   
           <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-light">
-            <div class="container">
+            <div class="container-fluid">
               <a class="navbar-brand text-white" href="#">
                 <h2 class="display-7 text-uppercase fw-semibold font-monospace"></h2>
                 <!-- <img src="img/Pfp.JPG" alt="Avatar Logo" style="width: 50px; height: 50px;" class="rounded-pill"> -->
@@ -47,7 +47,7 @@
                     <li class="nav-item active"><a class="nav-link text-light js-scroll-trigger" href="#"><i class="bi bi-house-door-fill" style="padding: 5px;"></i></a></li>
                     <li class="nav-item"><a class="nav-link text-light js-scroll-trigger" href="#about"><i class="bi bi-person-fill"></i></a></li>
                     <li class="nav-item"><a class="nav-link text-light js-scroll-trigger" href="contact.html"><i class="bi bi-phone"></i></a></li>
-                    <li class="nav-item"><a class="nav-link text-light js-scroll-trigger" href="https://github.com/Janeleq" target="_blank"><i class="bi bi-github"></i></a></li>
+                    <li class="nav-item"><a class="nav-link text-light js-scroll-trigger" href="https://github.com/Janeleq" target="__blank"><i class="bi bi-github"></i></a></li>
                   </ul>
               </div>
             </div>
@@ -56,12 +56,12 @@
     
 
         <div class="row">
-        <div class="jumbotron jumbotron-fluid text-white pt-5" style="">
-            <div class="container">
-                <h1 class="animate__animated animate__pulse animate__delay-2s animate__infinite display-1 text-uppercase fw-semibold font-monospace" style="color: rgb(40, 38, 38)">Jane Lim Enqi</h1>
+        <div class="jumbotron jumbotron-fluid text-white pt-5">
+            <div class="container-fluid">
+                <h1 class="display-1 text-uppercase fw-semibold font-monospace" style="color: rgb(40, 38, 38)">Jane Lim Enqi</h1>
                 <figure class="text-center m-0">
                     <blockquote class="blockquote">
-                      <p class="animate__animated animate__hinge animate__delay-2s lead text-muted">An IT student at SMU.</p>
+                      <p class="lead text-muted">An IT student at SMU.</p>
                     </blockquote>
                     <figcaption class="blockquote-footer mb-0">
                       Drowning <cite title="Source Title">in work</cite>
@@ -107,10 +107,137 @@
             </div>
           </div>
        -->
-        
+        <div class="container-fluid">
         <div class="row">
           <div id="about">
-            <h3 class=>Some Keyboards</h3>
+            <h3 class="animate__animated animate__bounce animate__delay-2s animate__infinite">Some Keyboards</h3>
+            <!-- MODAL GALLERY -->
+            <section class="">
+              <!-- Section: Images -->
+              <section class="">
+                <div class="row">
+                  <div class=" col-lg-4 col-md-12 mb-4 mb-lg-0">
+                      <a href="#exampleModal1" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        <img
+                        src="img/Screen1.JPG"
+                        class="w-100 bg-image hover-overlay ripple shadow-1-strong rounded"
+                        style="height: 300px;"
+                        data-ripple-color="light"/>
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                      </a>
+                  </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                  <img
+                  src="img/Screen2.JPG"
+                  class="w-100 bg-image hover-overlay ripple shadow-1-strong rounded"
+                  style="height: 300px;"
+                  data-ripple-color="light"
+                />
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                </a>
+              </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img
+                  src="img/Screen3.JPG"
+                  class="w-100 bg-image hover-overlay ripple shadow-1-strong rounded"
+                  style="height: 300px;"
+                  data-ripple-color="light"
+                />
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                </a>
+              </div>
+            </div>
+            </section>
+            <!-- Section: Images -->
+
+            <!-- Section: Modals -->
+            <section class="">
+            <!-- Modal 1 -->
+            <div
+            class="modal fade"
+            id="exampleModal1"
+            tabindex="-1"
+            aria-labelledby="exampleModal1Label"
+            aria-hidden="true"
+            >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="ratio ratio-16x9">
+                  <iframe
+                    src="https://www.youtube.com/embed/nwMlOpMRVGg"
+                    title="YouTube video"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="text-center py-3">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="close">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <!-- Modal 2 -->
+            <div
+            class="modal fade"
+            id="exampleModal2"
+            tabindex="-1"
+            aria-labelledby="exampleModal2Label"
+            aria-hidden="true"
+            >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="ratio ratio-16x9">
+                  <iframe
+                    src="https://www.youtube.com/embed/J_fgMDymnIA"
+                    title="YouTube video"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="text-center py-3">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <!-- Modal 3 -->
+            <div
+            class="modal fade"
+            id="exampleModal3"
+            tabindex="-1"
+            aria-labelledby="exampleModal3Label"
+            aria-hidden="true"
+            >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="ratio ratio-16x9">
+                  <iframe
+                    src="https://www.youtube.com/embed/v-4HGIdkziA"
+                    title="YouTube video"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="text-center py-3">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+            </div>
+            </section>
+            
+            <!-- Section: Modals -->
+            </section>
               <h3 class="text-uppercase">Projects</h2>
               <div class="card" style="width: 18rem;">
               <img src="img/Rainbow-Lottery.JPG" class="card-img-top" alt="...">
@@ -122,8 +249,9 @@
               </div>
           </div>
               <p>Some of my hobbies is playing the guitar and building keyboards and coding in my free time :)</p>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/nwMlOpMRVGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
       </div>
+    </div>
 
 
       <div class="row">
