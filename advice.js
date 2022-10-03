@@ -1,3 +1,16 @@
+
+function changeNavDisplay(obj)
+{
+    console.log(obj)
+    obj.style = "text-decoration: underline";
+}
+
+function initialNavDisplay(obj)
+{
+    console.log(obj)
+    obj.style = "text-decoration: none";
+}
+
 function getAdvice()
 {
     console.log("===[START] getAdvice() ===")
