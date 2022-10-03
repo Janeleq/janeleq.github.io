@@ -3,5 +3,5 @@
 
 ## APIs Used
 <ul>
-  <li>Advice Slip</li>
+  <li>Advice Slip JSON API</li>
 </ul>
