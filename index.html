@@ -43,36 +43,80 @@
             transform: translateY(-5px);
           }
 
+          /* DEMO-SPECIFIC STYLES */
+          #name {
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid rgb(110, 109, 107); /* The typwriter cursor */
+            white-space: nowrap; /* Keeps the content on a single line */
+            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .15em; /* Adjust as needed */
+            animation: 
+              typing 3.5s steps(40, end),
+              blink-caret .75s step-end infinite;
+          }
 
-      /* DEMO-SPECIFIC STYLES */
-      #name {
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid rgb(110, 109, 107); /* The typwriter cursor */
-        white-space: nowrap; /* Keeps the content on a single line */
-        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        letter-spacing: .15em; /* Adjust as needed */
-        animation: 
-          typing 3.5s steps(40, end),
-          blink-caret .75s step-end infinite;
-      }
+            .carousel 
+            {
+              position: relative;
+            }
 
-      /* The typing effect */
-      @keyframes typing {
-        from { width: 0 }
-        to { width: 100% }
-      }
+            .carousel-indicators 
+            {
+              top: 50px;
+              width: 75%;
+              position: static;
+              margin-bottom: 40px;
+              margin-left: 14%;
+            }
 
-      /* The typewriter cursor effect */
-      @keyframes blink-caret {
-        from, to { border-color: transparent }
-        50% { border-color: rgb(95, 93, 90); }
-      }
-          
+
+            .carousel-indicators button
+            {
+              width: 25%!important;
+              position: relative;
+              text-indent: 0!important;
+              border: none;
+              background: 0 0;
+            }
+
+            .carousel-indicators button:before 
+            {
+              position: absolute;
+              content: "";
+              width: 100%;
+            }
+
+            .carousel-indicators button h4
+            {
+              margin-top: -41px;
+              position: absolute;
+              left: 52%;
+              transform: translateX(-50%)
+            }
+
+            .carousel-indicators button.active h4
+            {
+              color:antiquewhite;
+              font-size: 35px;
+              position: absolute;
+              text-align: center;
+            }
+        /* The typing effect */
+        @keyframes typing {
+          from { width: 0 }
+          to { width: 100% }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+          from, to { border-color: transparent }
+          50% { border-color: rgb(95, 93, 90); }
+        }
+            
           
         </style>
     </head>
-    <body onload="typeWriter()">
-  
+    <body onload=>
           <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-light">
             <div class="container-fluid" style="font-size: x-large">
               <a class="navbar-brand text-white" href="#">
@@ -115,13 +159,47 @@
                   <p class="mt-2 mx-4" id="advice" style="font-weight: lighter"></p>
               </div>
               <div class="col-md-6 col-lg-5">
-                <img src="img/Banner.JPG" class="py-4" style="height: 100%; width: 60%; padding-bottom: 10px; float:right; margin-right: 20px; border-radius: 50%;">
+                <img src="img/Banner.JPG" class="py-auto" style="height: 100%; width: 60%; padding-bottom: 10px; float:right; margin-right: 20px; border-radius: 50%;">
               </div>
             </div>
             </div>
         </div>
         </div>
+
           
+        <div class="container py-5">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><h4>2021</h4></button>
+              <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"><h4>2018</h4></button>
+              <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"><h4>2014</h4></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="education-slide-one row h-100 align-items-center">
+                  <div class="col-md-5">
+                  <img class="rounded img-fluid d-block w-100" src="img/Rainbow-Lottery.JPG" alt="First slide">
+                </div>  
+                <div class="col-md-7">
+                  <div class="education-slide-text">
+                    <h3>August 2021</h3>
+                    <p>Stepped foot into SMU!!</p>
+                 </div>
+                </div>
+              </div>
+            </div>
+     
+              <div class="carousel-item">
+                <img class="d-block w-100" src="..." alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="..." alt="Third slide">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
         <!-- <div class="row" style="background: rgb(243, 238, 238);">
           <div class="mx-auto box p-4 mh-30 h-25">
               <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -158,6 +236,9 @@
             </div>
           </div>
        -->
+       <div class="container">
+        <h3 class="text-uppercase">Projects</h3>
+        </div>
         <div class="container-fluid">
         <div class="row">
           <div id="about">
@@ -172,7 +253,7 @@
                         <img
                         src="img/Screen1.JPG"
                         class="w-100 bg-image hover-overlay ripple shadow-1-strong rounded"
-                        style="height: 250px;"
+                        style="height: 200px;"
                         data-ripple-color="light"/>
                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
                       </a>
@@ -183,7 +264,7 @@
                   <img
                   src="img/Screen2.JPG"
                   class="w-100 bg-image hover-overlay ripple shadow-1-strong rounded"
-                  style="height: 250px;"
+                  style="height: 200px;"
                   data-ripple-color="light"
                 />
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
@@ -191,13 +272,13 @@
               </div>
 
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                 <img
                   src="img/Screen3.JPG"
                   class="w-100 bg-image hover-overlay ripple shadow-1-strong rounded"
-                  style="height: 250px;"
+                  style="height: 200px;"
                   data-ripple-color="light"
                 />
-                <a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
                 </a>
               </div>
