@@ -42,6 +42,34 @@
           {
             transform: translateY(-5px);
           }
+
+
+/* DEMO-SPECIFIC STYLES */
+      #name {
+        color: #fff;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid rgb(84, 83, 82); /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 3.5s steps(30, end),
+          blink-caret .5s step-end infinite;
+      }
+
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(52, 51, 49) }
+      }
+          
+          
         </style>
     </head>
     <body onload="typeWriter()">
@@ -71,7 +99,7 @@
 
 
         <div class="row">
-        <div class="jumbotron jumbotron-fluid bg-dark text-white pt-4 px-4" style="height: 70vh;">
+        <div class="jumbotron jumbotron-fluid bg-dark text-white pt-4 px-2" style="height: 70vh;">
             <div class="container-fluid">
               <div class="row" id="#home">
               <div class="col-md-6 col-lg-7">
@@ -84,8 +112,8 @@
                       Drowning <cite title="Source Title">in work</cite>
                     </figcaption>
                   </figure>
-                  <button class="text-dark btn btn-dark btn-outline-secondary mt-3" style="animation: pulse 3s ease-out infinite; background-color:rgb(158, 166, 166)" onclick="getAdvice()">Get your daily advice (Don't spam me though!)</button>
-                  <p class="mt-2" id="advice" style="font-weight: lighter"></p>
+                  <button class="mx-4 text-dark btn btn-dark btn-outline-secondary mt-3" style="animation: pulse 5s ease-out infinite; background-color:rgb(158, 166, 166)" onclick="getAdvice()">Get your daily advice (Don't spam me though!)</button>
+                  <p class="mt-2 mx-4" id="advice" style="font-weight: lighter"></p>
               </div>
               <div class="col-md-6 col-lg-5">
                 <img src="img/Banner.JPG" class="py-4" style="height: 100%; width: 60%; padding-bottom: 10px; float:right; margin-right: 20px; border-radius: 50%;">
