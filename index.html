@@ -44,17 +44,16 @@
           }
 
 
-/* DEMO-SPECIFIC STYLES */
+      /* DEMO-SPECIFIC STYLES */
       #name {
-        color: #fff;
         overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid rgb(84, 83, 82); /* The typwriter cursor */
+        border-right: .15em solid rgb(110, 109, 107); /* The typwriter cursor */
         white-space: nowrap; /* Keeps the content on a single line */
         margin: 0 auto; /* Gives that scrolling effect as the typing happens */
         letter-spacing: .15em; /* Adjust as needed */
         animation: 
-          typing 3.5s steps(30, end),
-          blink-caret .5s step-end infinite;
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
       }
 
       /* The typing effect */
@@ -66,7 +65,7 @@
       /* The typewriter cursor effect */
       @keyframes blink-caret {
         from, to { border-color: transparent }
-        50% { border-color: rgb(52, 51, 49) }
+        50% { border-color: rgb(95, 93, 90); }
       }
           
           
@@ -99,11 +98,11 @@
 
 
         <div class="row">
-        <div class="jumbotron jumbotron-fluid bg-dark text-white pt-4 px-2" style="height: 70vh; font-size: x-large">
+        <div class="jumbotron jumbotron-fluid bg-dark text-white pt-4 px-2" style="height: 70vh;">
             <div class="container-fluid">
               <div class="row" id="#home">
               <div class="col-md-6 col-lg-7">
-                <h1 id="name" data-period="2000" class="text-dark mx-4 display-1" style="text-shadow: 2px 2px rgb(222, 211, 211);"></h1>
+                <h1 id="name" class="text-dark mx-4" style="font-size: 50px; text-shadow: 2px 2px rgb(222, 211, 211);">Jane Lim Enqi</h1>
                 <figure class="mx-4">
                     <blockquote class="blockquote">
                       <p class="lead text-muted">An IT student at SMU.</p>
