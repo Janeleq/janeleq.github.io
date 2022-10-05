@@ -81,9 +81,18 @@
             </div>
 
     <script>
+      // Prototype response; will add actual response later on.
       function showData() 
       {      
-        alert(document.forms["contact"]["name"].value + ", receieved with thanks!"); // [] means getting by id or index
+        if (document.forms["contact"]["name"].value = "")
+        {
+          alert("receieved with thanks!");
+        }
+
+        else
+        {
+          alert(document.forms["contact"]["name"].value + ", receieved with thanks!"); 
+        }
         return false;
       }
     </script>
