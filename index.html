@@ -31,29 +31,25 @@
               
           }
 
-          .box
-          {
-            height: auto;
-            width: 600px;
-            height: 100px;
-          }
 
           li:hover
           {
             transform: translateY(-5px);
           }
 
+    
           /* DEMO-SPECIFIC STYLES */
-          #name {
-            overflow: hidden; /* Ensures the content is not revealed until the animation */
-            border-right: .15em solid rgb(110, 109, 107); /* The typwriter cursor */
-            white-space: nowrap; /* Keeps the content on a single line */
-            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-            letter-spacing: .15em; /* Adjust as needed */
-            animation: 
-              typing 3.5s steps(40, end),
-              blink-caret .75s step-end infinite;
-          }
+            #name {
+              font-size: xx-large;
+              overflow: hidden; /* Ensures the content is not revealed until the animation */
+              border-right: .15em solid rgb(110, 109, 107); /* The typwriter cursor */
+              white-space: nowrap; /* Keeps the content on a single line */
+              margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+              letter-spacing: .15em; /* Adjust as needed */
+              animation: 
+                typing 3.5s steps(30, end),
+                blink-caret .75s step-end infinite;
+            }
 
             .carousel 
             {
@@ -146,7 +142,7 @@
           <div class="jumbotron jumbotron-fluid bg-dark text-white pt-4 px-2" >
                 <div class="row" id="#home">
                 <div class="col-md-6 col-lg-7">
-                  <h1 id="name" class="text-dark mx-4" style="font-size: 65px; text-shadow: 2px 2px rgb(222, 211, 211);">Jane Lim Enqi</h1>
+                  <h1 id="name" class="text-dark mx-4" style="width:fit-content; font-size: 65px; text-shadow: 2px 2px rgb(222, 211, 211);">Jane Lim Enqi</h1>
                   <figure class="mx-4">
                       <blockquote class="blockquote">
                         <p class="lead text-muted">An IT student at SMU.</p>
@@ -273,6 +269,7 @@
               <!-- Section: Images -->
               <section class="">
                 <div class="row">
+  
                   <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                       <a href="#exampleModal1" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                         <img
@@ -284,7 +281,7 @@
                       </a>
                   </div>
 
-            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                 <a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                   <img
                   src="img/Screen2.JPG"
@@ -295,7 +292,7 @@
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
                 </a>
               </div>
-
+              
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
               <a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                 <img
