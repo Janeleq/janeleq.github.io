@@ -36,7 +36,7 @@
     
           /* DEMO-SPECIFIC STYLES */
             #name {
-              font-size: xx-large;
+              font-size: 100px;
               overflow: hidden; /* Ensures the content is not revealed until the animation */
               border-right: .15em solid rgb(110, 109, 107); /* The typwriter cursor */
               white-space: nowrap; /* Keeps the content on a single line */
@@ -138,7 +138,7 @@
           <div class="jumbotron jumbotron-fluid bg-dark text-white pt-4 px-2" style="background: url(img/blurry-gradient-haikei.png); background-repeat: no-repeat; background-position: center; background-size: cover; height: 70vh;" >
                 <div class="row" id="#home">
                 <div class="col-md-6 col-lg-7">
-                  <h1 id="name" class="text-dark mx-4" style="width:fit-content; font-size: 65px; text-shadow: 2px 2px rgb(222, 211, 211);">Jane Lim Enqi</h1>
+                  <h1 id="name" class="text-dark mx-4" style="width:fit-content; font-weight: bolder; text-shadow: 2px 2px rgb(222, 211, 211);">Jane Lim Enqi</h1>
                   <figure class="mx-4">
                       <blockquote class="blockquote">
                         <p class="lead text-dark">An IT student at SMU.</p>
@@ -153,6 +153,9 @@
                 <div class="col-md-6 col-lg-5">
                   <img src="img/Banner.JPG" class="" style=" width: 60%; padding-bottom: 10px; float:right; margin-right: 20px; border-radius: 50%;">
                 </div>
+              </div>
+              <div class="row text-center text-light">
+                <i class="bi bi-arrow-down" onmouseover=Promptmouseover() onmouseout=Promptmouseout()><p id="prompt"></p></i>
               </div>
               </div>
           </div>
