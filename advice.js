@@ -2,11 +2,12 @@
 function getAdvice()
 {
     console.log("===[START] getAdvice() ===")
-    api_url_endpoint = "https://api.adviceslip.com/advice"
+    let api_url_endpoint = "https://api.adviceslip.com/advice";
 
     
     axios.get(api_url_endpoint).then(response =>
         {
+            console.log(response.data);
           advice = response.data.slip.advice;
           document.getElementById("advice").innerHTML = advice;
         })
